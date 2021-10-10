@@ -1,0 +1,244 @@
+/** RESET **/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** QS **/
+
+body { 
+    background-color: #212F3B;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 3em;
+    font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h1 { 
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    text-transform: uppercase;
+    font-size: 5.0vw;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    
+}
+
+h2 { 
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 2vw;
+    opacity: .5;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    margin-bottom: 2em;
+}
+
+h3 { 
+    text-transform: uppercase;
+    font-family: 'Heebo', sans-serif;
+    font-size: 2em;
+    line-height: 1;
+    margin-bottom: 0px;
+}
+
+eyebrow { 
+    display: block;
+    font-size: .5em;
+    line-height: 1.5;
+    color: #e16e17;
+}
+
+p { 
+    line-height: 1.35;
+}
+
+.byline { 
+    font-size: .9em;
+    margin-top: 1em;
+}
+
+.content-wrapper { 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav .material-icons { 
+    font-size: 3em;
+    margin-right: .5em;
+    position: sticky;
+    margin-top: -8px;
+}
+
+nav .material-icons { 
+    color: #e16e17;
+}
+
+nav .material-icons:hover { 
+    opacity: .6;
+}
+
+footer { 
+    margin-top: 2em;
+    opacity: .5;
+    font-size: .9em;
+}
+
+
+.page-wrapper {
+    position: relative;
+    transition: 0.3s;
+    padding: 10px 25px;
+}
+  
+.side-menu {
+    color: #212f3b;
+    background-color: #e16e17;
+    padding: 15px 25px;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    transform: translate3d(-100%, 0, 0);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.side-menu  li { 
+        list-style: none;
+}
+.side-menu .item {
+    display: block;
+    color: black;
+    padding: 1em;
+    transition: 0.3s;
+    font-family: 'Heebo', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+    
+}
+.side-menu .item:hover {
+    color: white;
+}
+
+.menu-active .page-wrapper {
+    transform: translate3d(260px, 0, 0);
+}
+.menu-active .side-menu {
+    transform: translate3d(0, 0, 0);
+}
+
+a { 
+    color: #e16e17;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover { 
+    text-decoration: underline;
+}
+
+p { 
+    margin-bottom: 1em;
+}
+
+p:last-child { 
+    margin-bottom: 0;
+}
+
+.close-button span { 
+    color: white;
+    font-size: 2em;
+    padding-top: 1em;
+    cursor: pointer;
+}
+
+.close-button {
+    text-align: right;
+}
+
+.menu-toggle span { 
+    font-size: 2em;
+    margin-top: 0;
+}
+
+
+.inline-media img {
+    height: auto;
+    width: 100%;
+}
+
+.inline-media { 
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: #e16e17;
+    width: 120%;
+    margin-left: -10%;
+    padding: 10px;
+}
+
+.inline-media figcaption { 
+    font-size: 1em;
+    margin-top: 10px;
+    opacity: .8;
+    font-style: italic;
+}
+
+article a { 
+    color: #e16e17;
+    text-decoration: none;
+}
